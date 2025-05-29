@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dashboard - Task Manager</title>
+    <link rel="stylesheet" href="facudade\taskmanager\src\main\resources\static\css\style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Tarefas <span id="notifBadge" class="badge hidden">🔴</span></h1>
+
+    <div id="taskControls">
+        <button onclick="exportTasks()">Exportar</button>
+        <input type="file" onchange="importTasks(event)">
+        <select id="filterStatus">
+            <option value="">Todos</option>
+            <option value="pendente">Pendentes</option>
+            <option value="concluída">Concluídas</option>
+        </select>
+        <input type="text" id="searchText" placeholder="Buscar...">
+        <button onclick="loadTasks()">Filtrar</button>
+    </div>
+
+    <div id="taskList"></div>
+
+    <div class="form">
+        <h2>Nova Tarefa</h2>
+        <input type="text" id="taskTitle" placeholder="Título">
+        <input type="text" id="taskDesc" placeholder="Descrição">
+        <input type="datetime-local" id="taskDue">
+        <select id="taskPriority">
+            <option value="baixa">Baixa</option>
+            <option value="média">Média</option>
+            <option value="alta">Alta</option>
+        </select>
+        <button onclick="createTask()">Criar</button>
+    </div>
+</div>
+
+<script type="module" src="facudade/taskmanager/src/main/resources/static/js/tasks.js"></script>
+</body>
+</html>

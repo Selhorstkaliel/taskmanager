@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Task Manager</title>
+<link rel="stylesheet" href="facudade/taskmanager/src/main/resources/static/css/style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Task Manager</h1>
+    <form>
+      <input type="text" id="loginInput" placeholder="Usuário ou Gmail" required />
+      <input type="password" id="loginPassword" placeholder="Senha" required />
+      <button type="button" onclick="login()">Entrar</button>
+      <p><a href="/view/register.html">Criar conta</a></p>
+    </form>
+  </div>
+  <script type="module" src="facudade/taskmanager/src/main/resources/static/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Task Manager</title>
+  <link rel="stylesheet" href="facudade\taskmanager\src\main\resources\static\css\style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Cadastro</h1>
+    <form>
+      <input type="text" id="regName" placeholder="Nome completo" required />
+      <input type="text" id="regUsername" placeholder="Usuário" required />
+      <input type="email" id="regEmail" placeholder="Gmail" required />
+      <input type="password" id="regPassword" placeholder="Senha" required />
+      <button type="button" onclick="register()">Cadastrar</button>
+      <p><a href="/view/login.html">Já tenho conta</a></p>
+    </form>
+  </div>
+  <script type="module" src="/static/js/auth.js"></script>
+</body>
+</html>
